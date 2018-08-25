@@ -1,0 +1,65 @@
+<?php
+namespace LeoGalleguillos\Poem;
+
+use LeoGalleguillos\Flash\Model\Service as FlashService;
+use LeoGalleguillos\Poem\Model\Factory as PoemFactory;
+use LeoGalleguillos\Poem\Model\Service as PoemService;
+use LeoGalleguillos\Poem\Model\Table as PoemTable;
+use LeoGalleguillos\Poem\View\Helper as PoemHelper;
+use LeoGalleguillos\String\Model\Service as StringService;
+
+class Module
+{
+    public function getConfig()
+    {
+        return [
+            'view_helpers' => [
+                'aliases' => [
+                    'getRootRelativeUrl' => PoemHelper\RootRelativeUrl::class,
+                ],
+                'factories' => [
+                    PoemHelper\RootRelativeUrl::class => function ($serviceManager) {
+                        return new PoemHelper\RootRelativeUrl(
+                            $serviceManager->get(PoemService\RootRelativeUrl::class)
+                        );
+                    },
+                ],
+            ],
+        ];
+    }
+
+    public function getServiceConfig()
+    {
+        return [
+            'factories' => [
+                PoemFactory\Poem::class => function ($serviceManager) {
+                    return new PoemFactory\Poem(
+                        $serviceManager->get(PoemTable\Poem::class)
+                    );
+                },
+                PoemService\RootRelativeUrl::class => function ($serviceManager) {
+                    return new PoemService\RootRelativeUrl(
+                        $serviceManager->get(StringService\UrlFriendly::class)
+                    );
+                },
+                PoemService\Poems::class => function ($serviceManager) {
+                    return new PoemService\Poems(
+                        $serviceManager->get(PoemFactory\Poem::class),
+                        $serviceManager->get(PoemTable\Poem::class)
+                    );
+                },
+                PoemService\Submit::class => function ($serviceManager) {
+                    return new PoemService\Submit(
+                        $serviceManager->get(FlashService\Flash::class),
+                        $serviceManager->get(PoemTable\Poem::class)
+                    );
+                },
+                PoemTable\Poem::class => function ($serviceManager) {
+                    return new PoemTable\Poem(
+                        $serviceManager->get('main')
+                    );
+                },
+            ],
+        ];
+    }
+}
