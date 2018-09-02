@@ -3,5 +3,6 @@ CREATE TABLE `poem` (
     `user_id` int(10) unsigned not null,
     `title` varchar(255) not null,
     `body` text,
+    `created` datetime not null,
     PRIMARY KEY (`poem_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
