@@ -21,13 +21,13 @@ class Poem
         int $userId,
         string $title,
         string $body
-    ) {
+    ): int {
         $sql = '
             INSERT
               INTO `poem` (
-                   `user_id`, `title`, `body`
+                   `user_id`, `title`, `body`, `created`
                    )
-            VALUES (?, ?, ?)
+            VALUES (?, ?, ?, UTC_TIMESTAMP())
                  ;
         ';
         $parameters = [
@@ -35,10 +35,10 @@ class Poem
             $title,
             $body,
         ];
-        return $this->adapter
-                    ->query($sql)
-                    ->execute($parameters)
-                    ->getGeneratedValue();
+        return (int) $this->adapter
+                          ->query($sql)
+                          ->execute($parameters)
+                          ->getGeneratedValue();
     }
 
     /**

@@ -48,4 +48,16 @@ class PoemTest extends TableTestCase
             $this->poemTable
         );
     }
+     public function testInsert()
+     {
+        $poemId = $this->poemTable->insert(
+            1,
+            'title',
+            'body'
+        );
+        $this->assertSame(
+            $poemId,
+            1
+        );
+     }
 }
