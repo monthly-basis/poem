@@ -54,6 +54,7 @@ class Poem
                  , `user_id`
                  , `title`
                  , `body`
+                 , `created`
               FROM `poem`
              ORDER
                 BY `poem_id` DESC
@@ -72,6 +73,7 @@ class Poem
                  , `user_id`
                  , `title`
                  , `body`
+                 , `created`
               FROM `poem`
              WHERE `poem_id` = ?
                  ;
