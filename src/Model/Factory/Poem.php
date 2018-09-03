@@ -1,6 +1,7 @@
 <?php
 namespace LeoGalleguillos\Poem\Model\Factory;
 
+use DateTime;
 use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
 
@@ -22,6 +23,7 @@ class Poem
     {
         $poemEntity = new PoemEntity\Poem();
         $poemEntity->setBody($array['body'])
+                         ->setCreated(new DateTime($array['created']))
                          ->setPoemId($array['poem_id'])
                          ->setTitle($array['title']);
 
