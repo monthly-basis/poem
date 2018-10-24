@@ -37,6 +37,11 @@ class Module
                         $serviceManager->get(PoemTable\Poem::class)
                     );
                 },
+                PoemService\IncrementViews::class => function ($serviceManager) {
+                    return new PoemService\IncrementViews(
+                        $serviceManager->get(PoemTable\Poem\Views::class)
+                    );
+                },
                 PoemService\RootRelativeUrl::class => function ($serviceManager) {
                     return new PoemService\RootRelativeUrl(
                         $serviceManager->get(StringService\UrlFriendly::class)
