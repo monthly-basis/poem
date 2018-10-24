@@ -59,6 +59,11 @@ class Module
                         $serviceManager->get('main')
                     );
                 },
+                PoemTable\Poem\Views::class => function ($serviceManager) {
+                    return new PoemTable\Poem\Views(
+                        $serviceManager->get('main')
+                    );
+                },
             ],
         ];
     }
