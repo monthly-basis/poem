@@ -10,6 +10,7 @@ class Poem
     protected $created;
     protected $poemId;
     protected $title;
+    protected $userId;
 
     public function getBody(): string
     {
@@ -29,6 +30,11 @@ class Poem
     public function getTitle(): string
     {
         return $this->title;
+    }
+
+    public function getUserId(): int
+    {
+        return $this->userId;
     }
 
     public function setBody(string $body): PoemEntity\Poem
@@ -52,6 +58,12 @@ class Poem
     public function setTitle(string $title): PoemEntity\Poem
     {
         $this->title = $title;
+        return $this;
+    }
+
+    public function setUserId(int $userId): PoemEntity\Poem
+    {
+        $this->userId = $userId;
         return $this;
     }
 }
