@@ -15,7 +15,7 @@ class IncrementViews
     public function incrementViews(
         PoemEntity\Poem $poemEntity
     ): bool {
-        return (bool) $this->viewsTable->increment(
+        return (bool) $this->viewsTable->incrementWherePoemId(
             $poemEntity->getPoemId()
         );
     }
