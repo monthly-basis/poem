@@ -23,9 +23,10 @@ class Poem
     {
         $poemEntity = new PoemEntity\Poem();
         $poemEntity->setBody($array['body'])
-                         ->setCreated(new DateTime($array['created']))
-                         ->setPoemId($array['poem_id'])
-                         ->setTitle($array['title']);
+                   ->setCreated(new DateTime($array['created']))
+                   ->setPoemId($array['poem_id'])
+                   ->setTitle($array['title'])
+                   ->setUserId($array['user_id']);
 
         return $poemEntity;
     }
