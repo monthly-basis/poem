@@ -10,10 +10,10 @@ class PoemTest extends TableTestCase
 {
     protected function setUp()
     {
-        $this->poemTable = new PoemTable\Poem($this->getAdapter());
-
         $this->dropTable('poem');
         $this->createTable('poem');
+
+        $this->poemTable = new PoemTable\Poem($this->getAdapter());
     }
 
     public function testInitialize()
