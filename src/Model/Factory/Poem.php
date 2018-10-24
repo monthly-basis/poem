@@ -26,7 +26,8 @@ class Poem
                    ->setCreated(new DateTime($array['created']))
                    ->setPoemId($array['poem_id'])
                    ->setTitle($array['title'])
-                   ->setUserId($array['user_id']);
+                   ->setUserId($array['user_id'])
+                   ->setViews($array['views']);
 
         return $poemEntity;
     }
