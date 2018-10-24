@@ -1,6 +1,7 @@
 <?php
 namespace LeoGalleguillos\Poem\Model\Service;
 
+use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
 
 class IncrementViews
