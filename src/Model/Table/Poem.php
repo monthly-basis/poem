@@ -17,6 +17,18 @@ class Poem
         $this->adapter = $adapter;
     }
 
+    protected function getSelect(): string
+    {
+        return '
+            SELECT `poem_id`
+                 , `user_id`
+                 , `title`
+                 , `body`
+                 , `views`
+                 , `created`
+        ';
+    }
+
     public function insert(
         int $userId,
         string $title,
@@ -84,5 +96,25 @@ class Poem
             $poemId,
         ];
         return $this->adapter->query($sql)->execute($parameters)->current();
+    }
+
+    public function selectWhereUserId(
+        int $userId,
+        int $limitOffset,
+        int $limitRowCount
+    ): Generator {
+        $sql = $this->getSelect()
+             . "
+              FROM `poem`
+             WHERE `user_id` = ?
+             LIMIT $limitOffset, $limitRowCount
+                 ;
+        ";
+        $parameters = [
+            $userId,
+        ];
+        foreach ($this->adapter->query($sql)->execute($parameters) as $array) {
+            return $array;
+        }
     }
 }
