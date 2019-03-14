@@ -53,6 +53,12 @@ class Module
                         $serviceManager->get(PoemTable\Poem::class)
                     );
                 },
+                PoemService\Poems\User::class => function ($serviceManager) {
+                    return new PoemService\Poems\User(
+                        $serviceManager->get(PoemFactory\Poem::class),
+                        $serviceManager->get(PoemTable\Poem::class)
+                    );
+                },
                 PoemService\Submit::class => function ($serviceManager) {
                     return new PoemService\Submit(
                         $serviceManager->get(FlashService\Flash::class),
