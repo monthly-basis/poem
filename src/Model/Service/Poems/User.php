@@ -2,6 +2,7 @@
 namespace LeoGalleguillos\Poem\Model\Service\Poems;
 
 use Generator;
+use LeoGalleguillos\User\Model\Entity as UserEntity;
 use LeoGalleguillos\Poem\Model\Factory as PoemFactory;
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
 
@@ -15,9 +16,14 @@ class User
         $this->poemTable   = $poemTable;
     }
 
-    public function getPoems(): Generator
+    public function getPoems(UserEntity\User $userEntity): Generator
     {
-        foreach ($this->poemTable->select() as $array) {
+        $generator = $this->poemTable->selectWhereUserId(
+            $userEntity->getUserId(),
+            0,
+            100
+        );
+        foreach ($generator as $array) {
             yield $this->poemFactory->buildFromArray($array);
         }
     }
