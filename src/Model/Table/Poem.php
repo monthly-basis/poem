@@ -114,7 +114,7 @@ class Poem
             $userId,
         ];
         foreach ($this->adapter->query($sql)->execute($parameters) as $array) {
-            return $array;
+            yield $array;
         }
     }
 }
