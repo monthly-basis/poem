@@ -6,7 +6,7 @@ use LeoGalleguillos\Test\TableTestCase;
 
 class ViewsTest extends TableTestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->dropTable('poem');
         $this->createTable('poem');

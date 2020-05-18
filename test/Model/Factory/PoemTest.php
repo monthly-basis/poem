@@ -7,7 +7,7 @@ use PHPUnit\Framework\TestCase;
 
 class PoemTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->poemTableMock = $this->createMock(
             PoemTable\Poem::class
