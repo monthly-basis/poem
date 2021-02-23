@@ -4,7 +4,7 @@ namespace LeoGalleguillos\Poem\View\Helper;
 use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
 use LeoGalleguillos\Poem\Model\Service as PoemService;
 use LeoGalleguillos\Poem\View\Helper as PoemHelper;
-use Zend\View\Helper\AbstractHelper;
+use Laminas\View\Helper\AbstractHelper;
 
 class RootRelativeUrl extends AbstractHelper
 {

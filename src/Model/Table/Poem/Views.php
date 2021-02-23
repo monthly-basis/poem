@@ -1,7 +1,7 @@
 <?php
 namespace LeoGalleguillos\Poem\Model\Table\Poem;
 
-use Zend\Db\Adapter\Adapter;
+use Laminas\Db\Adapter\Adapter;
 
 class Views
 {
