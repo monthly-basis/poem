@@ -6,7 +6,7 @@ use LeoGalleguillos\Poem\Model\Factory as PoemFactory;
 use LeoGalleguillos\Poem\Model\Service as PoemService;
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
 use LeoGalleguillos\Poem\View\Helper as PoemHelper;
-use LeoGalleguillos\String\Model\Service as StringService;
+use MonthlyBasis\String\Model\Service as StringService;
 
 class Module
 {

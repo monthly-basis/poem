@@ -6,7 +6,7 @@ return [
         'Laminas\Router',
         'MonthlyBasis\Flash',
         'LeoGalleguillos\Poem',
-        'LeoGalleguillos\String',
+        'MonthlyBasis\String',
     ],
     // These are various options for the listeners attached to the ModuleManager
     'module_listener_options' => array(

@@ -3,7 +3,7 @@ namespace LeoGalleguillos\Poem\Model\Service;
 
 use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
 use LeoGalleguillos\Poem\Model\Service as PoemService;
-use LeoGalleguillos\String\Model\Service as StringService;
+use MonthlyBasis\String\Model\Service as StringService;
 
 class RootRelativeUrl
 {
