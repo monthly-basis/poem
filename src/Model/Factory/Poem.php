@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\Poem\Model\Factory;
+namespace MonthlyBasis\Poem\Model\Factory;
 
 use DateTime;
-use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
-use LeoGalleguillos\Poem\Model\Table as PoemTable;
+use MonthlyBasis\Poem\Model\Entity as PoemEntity;
+use MonthlyBasis\Poem\Model\Table as PoemTable;
 
 class Poem
 {

@@ -1,10 +1,10 @@
 <?php
-namespace LeoGalleguillos\Poem\Model\Service\Poems;
+namespace MonthlyBasis\Poem\Model\Service\Poems;
 
 use Generator;
 use LeoGalleguillos\User\Model\Entity as UserEntity;
-use LeoGalleguillos\Poem\Model\Factory as PoemFactory;
-use LeoGalleguillos\Poem\Model\Table as PoemTable;
+use MonthlyBasis\Poem\Model\Factory as PoemFactory;
+use MonthlyBasis\Poem\Model\Table as PoemTable;
 
 class User
 {

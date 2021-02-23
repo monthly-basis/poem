@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\Poem\Model\Entity;
+namespace MonthlyBasis\Poem\Model\Entity;
 
 use DateTime;
-use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
+use MonthlyBasis\Poem\Model\Entity as PoemEntity;
 
 class Poem
 {

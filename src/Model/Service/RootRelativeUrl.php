@@ -1,8 +1,8 @@
 <?php
-namespace LeoGalleguillos\Poem\Model\Service;
+namespace MonthlyBasis\Poem\Model\Service;
 
-use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
-use LeoGalleguillos\Poem\Model\Service as PoemService;
+use MonthlyBasis\Poem\Model\Entity as PoemEntity;
+use MonthlyBasis\Poem\Model\Service as PoemService;
 use MonthlyBasis\String\Model\Service as StringService;
 
 class RootRelativeUrl

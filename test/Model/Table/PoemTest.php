@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\PoemTest\Model\Table;
+namespace MonthlyBasis\PoemTest\Model\Table;
 
-use LeoGalleguillos\Poem\Model\Table as PoemTable;
+use MonthlyBasis\Poem\Model\Table as PoemTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
 use Laminas\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;

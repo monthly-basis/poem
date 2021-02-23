@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\PoemTest;
+namespace MonthlyBasis\PoemTest;
 
-use LeoGalleguillos\Poem\Module;
+use MonthlyBasis\Poem\Module;
 use PHPUnit\Framework\TestCase;
 use Laminas\Mvc\Application;
 

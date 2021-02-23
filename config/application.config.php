@@ -5,7 +5,7 @@ return [
         'Laminas\Db',
         'Laminas\Router',
         'MonthlyBasis\Flash',
-        'LeoGalleguillos\Poem',
+        'MonthlyBasis\Poem',
         'MonthlyBasis\String',
     ],
     // These are various options for the listeners attached to the ModuleManager

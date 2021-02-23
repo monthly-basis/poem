@@ -1,5 +1,5 @@
 <?php
-namespace LeoGalleguillos\Poem\Model\Table\Poem;
+namespace MonthlyBasis\Poem\Model\Table\Poem;
 
 use Laminas\Db\Adapter\Adapter;
 

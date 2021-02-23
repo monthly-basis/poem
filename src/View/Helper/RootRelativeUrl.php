@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\Poem\View\Helper;
+namespace MonthlyBasis\Poem\View\Helper;
 
-use LeoGalleguillos\Poem\Model\Entity as PoemEntity;
-use LeoGalleguillos\Poem\Model\Service as PoemService;
-use LeoGalleguillos\Poem\View\Helper as PoemHelper;
+use MonthlyBasis\Poem\Model\Entity as PoemEntity;
+use MonthlyBasis\Poem\Model\Service as PoemService;
+use MonthlyBasis\Poem\View\Helper as PoemHelper;
 use Laminas\View\Helper\AbstractHelper;
 
 class RootRelativeUrl extends AbstractHelper

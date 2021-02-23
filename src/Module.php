@@ -1,11 +1,11 @@
 <?php
-namespace LeoGalleguillos\Poem;
+namespace MonthlyBasis\Poem;
 
 use MonthlyBasis\Flash\Model\Service as FlashService;
-use LeoGalleguillos\Poem\Model\Factory as PoemFactory;
-use LeoGalleguillos\Poem\Model\Service as PoemService;
-use LeoGalleguillos\Poem\Model\Table as PoemTable;
-use LeoGalleguillos\Poem\View\Helper as PoemHelper;
+use MonthlyBasis\Poem\Model\Factory as PoemFactory;
+use MonthlyBasis\Poem\Model\Service as PoemService;
+use MonthlyBasis\Poem\Model\Table as PoemTable;
+use MonthlyBasis\Poem\View\Helper as PoemHelper;
 use MonthlyBasis\String\Model\Service as StringService;
 
 class Module

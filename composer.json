@@ -1,17 +1,17 @@
 {
-    "name": "leo-galleguillos/poem",
+    "name": "monthly-basis/poem",
     "license": "MIT",
     "require": {
+        "laminas/laminas-test": "^3.1",
+        "laminas/laminas-db": "^2.9",
         "monthly-basis/flash": "^2.0",
         "monthly-basis/string": "^3.0",
-        "monthly-basis/laminas-test": "^2.0",
-        "laminas/laminas-test": "^3.1",
-        "laminas/laminas-db": "^2.9"
+        "monthly-basis/laminas-test": "^2.0"
     },
     "autoload": {
         "psr-4": {
-            "LeoGalleguillos\\Poem\\": "src/",
-            "LeoGalleguillos\\PoemTest\\": "test/"
+            "MonthlyBasis\\Poem\\": "src/",
+            "MonthlyBasis\\PoemTest\\": "test/"
         }
     }
 }

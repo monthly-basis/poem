@@ -1,9 +1,9 @@
 <?php
-namespace LeoGalleguillos\Poem\Model\Service;
+namespace MonthlyBasis\Poem\Model\Service;
 
 use Exception;
 use MonthlyBasis\Flash\Model\Service as FlashService;
-use LeoGalleguillos\Poem\Model\Table as PoemTable;
+use MonthlyBasis\Poem\Model\Table as PoemTable;
 use LeoGalleguillos\User\Model\Entity as UserEntity;
 
 class Submit

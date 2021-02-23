@@ -1,7 +1,7 @@
 <?php
-namespace LeoGalleguillos\PoemTest\Model\Table\Poem;
+namespace MonthlyBasis\PoemTest\Model\Table\Poem;
 
-use LeoGalleguillos\Poem\Model\Table as PoemTable;
+use MonthlyBasis\Poem\Model\Table as PoemTable;
 use MonthlyBasis\LaminasTest\TableTestCase;
 
 class ViewsTest extends TableTestCase
