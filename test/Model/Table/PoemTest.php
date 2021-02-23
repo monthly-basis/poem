@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\PoemTest\Model\Table;
 
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
-use LeoGalleguillos\Test\TableTestCase;
+use MonthlyBasis\LaminasTest\TableTestCase;
 use Laminas\Db\Adapter\Adapter;
 use PHPUnit\Framework\TestCase;
 use TypeError;

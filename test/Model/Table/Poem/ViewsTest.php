@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\PoemTest\Model\Table\Poem;
 
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
-use LeoGalleguillos\Test\TableTestCase;
+use MonthlyBasis\LaminasTest\TableTestCase;
 
 class ViewsTest extends TableTestCase
 {
