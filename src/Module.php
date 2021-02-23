@@ -1,7 +1,7 @@
 <?php
 namespace LeoGalleguillos\Poem;
 
-use LeoGalleguillos\Flash\Model\Service as FlashService;
+use MonthlyBasis\Flash\Model\Service as FlashService;
 use LeoGalleguillos\Poem\Model\Factory as PoemFactory;
 use LeoGalleguillos\Poem\Model\Service as PoemService;
 use LeoGalleguillos\Poem\Model\Table as PoemTable;

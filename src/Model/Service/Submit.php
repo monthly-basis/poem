@@ -2,7 +2,7 @@
 namespace LeoGalleguillos\Poem\Model\Service;
 
 use Exception;
-use LeoGalleguillos\Flash\Model\Service as FlashService;
+use MonthlyBasis\Flash\Model\Service as FlashService;
 use LeoGalleguillos\Poem\Model\Table as PoemTable;
 use LeoGalleguillos\User\Model\Entity as UserEntity;
 

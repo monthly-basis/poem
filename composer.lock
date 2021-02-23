@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eab091db624bf4c1d687937d7da1fbdd",
+    "content-hash": "b58065d3197bc9bda126cd822b95302d",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -1239,37 +1239,6 @@
             "time": "2020-09-14T14:23:00+00:00"
         },
         {
-            "name": "leo-galleguillos/flash",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/LeoGalleguillos/Flash.git",
-                "reference": "3e42ea1770828477ae71cd7c9fd326db98c8f7b1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/LeoGalleguillos/Flash/zipball/3e42ea1770828477ae71cd7c9fd326db98c8f7b1",
-                "reference": "3e42ea1770828477ae71cd7c9fd326db98c8f7b1",
-                "shasum": ""
-            },
-            "require": {
-                "laminas/laminas-test": "^3.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "LeoGalleguillos\\Flash\\": "src/",
-                    "LeoGalleguillos\\FlashTest\\": "test/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "abandoned": "monthly-basis/flash",
-            "time": "2020-01-25T09:12:09+00:00"
-        },
-        {
             "name": "leo-galleguillos/string",
             "version": "v1.0.42",
             "source": {
@@ -1331,6 +1300,36 @@
             ],
             "abandoned": "monthly-basis/laminas-test",
             "time": "2020-06-06T16:07:22+00:00"
+        },
+        {
+            "name": "monthly-basis/flash",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monthly-basis/flash.git",
+                "reference": "26750b27d12405f84bca3bff5368a1fa1281ce2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monthly-basis/flash/zipball/26750b27d12405f84bca3bff5368a1fa1281ce2e",
+                "reference": "26750b27d12405f84bca3bff5368a1fa1281ce2e",
+                "shasum": ""
+            },
+            "require": {
+                "laminas/laminas-test": "^3.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MonthlyBasis\\Flash\\": "src/",
+                    "MonthlyBasis\\FlashTest\\": "test/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2020-11-09T05:06:44+00:00"
         },
         {
             "name": "myclabs/deep-copy",
