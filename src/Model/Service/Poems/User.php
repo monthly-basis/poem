@@ -2,7 +2,7 @@
 namespace MonthlyBasis\Poem\Model\Service\Poems;
 
 use Generator;
-use LeoGalleguillos\User\Model\Entity as UserEntity;
+use MonthlyBasis\User\Model\Entity as UserEntity;
 use MonthlyBasis\Poem\Model\Factory as PoemFactory;
 use MonthlyBasis\Poem\Model\Table as PoemTable;
 

@@ -4,7 +4,7 @@ namespace MonthlyBasis\Poem\Model\Service;
 use Exception;
 use MonthlyBasis\Flash\Model\Service as FlashService;
 use MonthlyBasis\Poem\Model\Table as PoemTable;
-use LeoGalleguillos\User\Model\Entity as UserEntity;
+use MonthlyBasis\User\Model\Entity as UserEntity;
 
 class Submit
 {
