@@ -67,12 +67,12 @@ class Module
                 },
                 PoemTable\Poem::class => function ($serviceManager) {
                     return new PoemTable\Poem(
-                        $serviceManager->get('main')
+                        $serviceManager->get('poem')
                     );
                 },
                 PoemTable\Poem\Views::class => function ($serviceManager) {
                     return new PoemTable\Poem\Views(
-                        $serviceManager->get('main')
+                        $serviceManager->get('poem')
                     );
                 },
             ],
